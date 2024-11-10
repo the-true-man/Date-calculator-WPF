@@ -1,0 +1,75 @@
+﻿<Window x:Class="date_calc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:date_calc"
+        
+        mc:Ignorable="d"
+        Title="Калькулятор дней" Height="600" Width="1100">
+    <Grid>
+        <TextBlock FontSize="30" FontWeight="Bold" Margin="30 0 0 0">Калькулятор дней</TextBlock>
+        <Border Margin="5 40 5 5" Background="#FFEBFCFF" CornerRadius="40">
+            <StackPanel>
+                <RadioButton x:Name="rb_1" Content="Прибавить к дате" IsChecked="True" Margin="285 0 0 0" FontSize="20" VerticalContentAlignment="Center" Checked="rb_1_Checked"></RadioButton>
+                <RadioButton x:Name="rb_2" Content="Прибавить рабочие дни к дате" Margin="285 0 0 0" FontSize="20" VerticalContentAlignment="Center" Checked="rb_2_Checked"></RadioButton>
+                <RadioButton x:Name="rb_3" Content="Вычислить разницу между датами" Margin="285 0 0 0" FontSize="20" VerticalContentAlignment="Center" Checked="rb_3_Checked"></RadioButton>
+                <StackPanel>
+                    <StackPanel>
+                        <StackPanel  Orientation="Horizontal">
+                            <Label FontSize="18" Margin="135 10 10 10">Начальная дата</Label>
+                            <DatePicker x:Name="dp_1" Width="120" FontSize="16" Height="30" Margin="0 0 0 0"/>
+                        </StackPanel>
+                        <StackPanel Visibility="Collapsed" x:Name="stack_panel_2" Orientation="Horizontal" >
+                            <Label FontSize="18" Margin="20 10 10 10">Сколько прибавить / вычесть</Label>
+                            <ComboBox x:Name="cb_select_action_2" Width="150" Height="30" FontSize="18">
+                                <ComboBoxItem>(+) Прибавить</ComboBoxItem>
+                                <ComboBoxItem>(-) Вычесть</ComboBoxItem>
+                            </ComboBox>
+                            <TextBox x:Name="tb_count_days_2" PreviewTextInput="tb_count_days_PreviewTextInput" MouseEnter="count_days_MouseEnter" LostFocus="tb_count_days_LostFocus" MouseLeave="count_days_MouseLeave" Text="дней" Margin="5 0 0 0" Width="110" Height="30" FontSize="18" Foreground="#FF5D5B5B"></TextBox>
+                        </StackPanel>
+                        <StackPanel x:Name="stack_panel_3" Orientation="Horizontal" Visibility="Hidden">
+                            <Label FontSize="18" Margin="135 10 10 10">Конечная дата</Label>
+                            <DatePicker x:Name="dp_2" Width="120" FontSize="16" Height="30" Margin="10 0 0 0"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel x:Name="stack_panel_1" Orientation="Horizontal" Visibility="Visible">
+                        <Label FontSize="18" Margin="20 10 10 10">Сколько прибавить / вычесть</Label>
+                        <ComboBox x:Name="cb_select_action" Width="150" Height="30" FontSize="18">
+                            <ComboBoxItem>(+) Прибавить</ComboBoxItem>
+                            <ComboBoxItem>(-) Вычесть</ComboBoxItem>
+                        </ComboBox>
+                        <TextBox x:Name="tb_count_days" PreviewTextInput="tb_count_days_PreviewTextInput" MouseEnter="count_days_MouseEnter" LostFocus="tb_count_days_LostFocus" MouseLeave="count_days_MouseLeave" Text="дней" Margin="5 0 0 0" Width="110" Height="30" FontSize="18" Foreground="#FF5D5B5B"></TextBox>
+                        <TextBox x:Name="tb_count_weeks" PreviewTextInput="tb_count_days_PreviewTextInput" MouseEnter="count_days_MouseEnter" LostFocus="tb_count_days_LostFocus" MouseLeave="count_days_MouseLeave" Text="недель" Margin="5 0 0 0" Width="110" Height="30" FontSize="18" Foreground="#FF5D5B5B"></TextBox>
+                        <TextBox x:Name="tb_count_mounths" PreviewTextInput="tb_count_days_PreviewTextInput" MouseEnter="count_days_MouseEnter" LostFocus="tb_count_days_LostFocus" MouseLeave="count_days_MouseLeave" Text="месяцев" Margin="5 0 0 0" Width="110" Height="30" FontSize="18" Foreground="#FF5D5B5B"></TextBox>
+                        <TextBox x:Name="tb_count_years" PreviewTextInput="tb_count_days_PreviewTextInput" MouseEnter="count_days_MouseEnter" LostFocus="tb_count_days_LostFocus" MouseLeave="count_days_MouseLeave" Text="лет" Margin="5 0 0 0" Width="110" Height="30" FontSize="18" Foreground="#FF5D5B5B"></TextBox>
+                    </StackPanel>
+                    <Button Height="40" Width="200" HorizontalAlignment="Left" Margin="30 0 0 10" Click="Button_Click" BorderBrush="#FFCCCCCC" Background="#FF079EFF" FontSize="18" Foreground="White">Рассчитать</Button>
+                    <StackPanel x:Name="stack_panel_result_1" Visibility="Hidden" Orientation="Horizontal">
+                        <Label FontSize="20" Margin="135 10 10 10">Конечная дата</Label>
+                        <Label x:Name="lb_finish_date_1" FontSize="20" Margin="10" FontWeight="Bold" ></Label>
+                    </StackPanel>
+                    <StackPanel Margin="0 -50 0 0 " x:Name="stack_panel_2_2" Visibility="Hidden">
+                        <StackPanel Orientation="Horizontal">
+                            <Label FontSize="20" Margin="40 0 0 0">Результат:</Label>
+                            <Label x:Name="lb_usually_day" FontSize="20"  Margin="40 0 0 0"></Label>
+                            <Label FontSize="20" Margin="0 0 0 0" Foreground="#FF585858">календарных дней</Label>
+                        </StackPanel>
+                        <Label FontSize="20" Margin="180 0 0 0" Foreground="#FF585858">или</Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="lb_working_day" FontSize="20"  Margin="185 0 0 0"></Label>
+                            <Label  FontSize="20" Margin="0 0 0 0" Foreground="#FF585858">рабочих дней</Label>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel x:Name="stack_panel_result_2" Orientation="Horizontal" Visibility="Collapsed">
+                        <Label FontSize="20" Margin="135 10 10 10">Конечная дата</Label>
+                        <Label x:Name="lb_finish_date_2" FontSize="20" Margin="10 10 0 0" FontWeight="Bold" ></Label>
+                    </StackPanel>
+                </StackPanel>
+                
+            </StackPanel>
+        </Border>
+        
+
+    </Grid>
+</Window>

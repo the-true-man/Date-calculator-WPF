@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "date_calc", "date_calc\date_calc.csproj", "{7D264B49-18AF-4A2B-BBE0-8F13CE79CAD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D264B49-18AF-4A2B-BBE0-8F13CE79CAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D264B49-18AF-4A2B-BBE0-8F13CE79CAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D264B49-18AF-4A2B-BBE0-8F13CE79CAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D264B49-18AF-4A2B-BBE0-8F13CE79CAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35B3D7CC-8D28-45CF-B8E4-5C8A1173869E}
+	EndGlobalSection
+EndGlobal

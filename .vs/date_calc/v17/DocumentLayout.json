@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\evgen\\YandexDisk\\my project\\date_calc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D264B49-18AF-4A2B-BBE0-8F13CE79CAD8}|date_calc\\date_calc.csproj|c:\\users\\evgen\\yandexdisk\\my project\\date_calc\\date_calc\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D264B49-18AF-4A2B-BBE0-8F13CE79CAD8}|date_calc\\date_calc.csproj|solutionrelative:date_calc\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D264B49-18AF-4A2B-BBE0-8F13CE79CAD8}|date_calc\\date_calc.csproj|C:\\Users\\evgen\\YandexDisk\\my project\\date_calc\\date_calc\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D264B49-18AF-4A2B-BBE0-8F13CE79CAD8}|date_calc\\date_calc.csproj|solutionrelative:date_calc\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\evgen\\YandexDisk\\my project\\date_calc\\date_calc\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "date_calc\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\evgen\\YandexDisk\\my project\\date_calc\\date_calc\\MainWindow.xaml",
+              "RelativeToolTip": "date_calc\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-21T14:32:25.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\evgen\\YandexDisk\\my project\\date_calc\\date_calc\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "date_calc\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\evgen\\YandexDisk\\my project\\date_calc\\date_calc\\MainWindow.xaml.cs",
+              "RelativeToolTip": "date_calc\\MainWindow.xaml.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAuwM4AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T14:32:24.915Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
